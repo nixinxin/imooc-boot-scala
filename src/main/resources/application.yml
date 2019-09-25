@@ -1,15 +1,3 @@
-server:
-  port: 8888
-  servlet:
-    context-path: /scala-boot
-
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: zero
-    password: 123456
-    url: jdbc:mysql://localhost:3306/imoocbootscala?useSSL=false
-  jpa:
-    hibernate:
-      ddl-auto: update
-    database: mysql
+  profiles:
+    active: prd
